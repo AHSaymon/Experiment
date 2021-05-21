@@ -1,0 +1,23 @@
+package test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import pages.NexcharHomepageObject;
+
+public class HpTest {
+	static WebDriver driver= null;
+	public static void main(String[] args) {
+		HpTesting();
+	}
+	public static void HpTesting(){
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\Desktop\\Work\\New folder\\Selenium\\SeleniumFw\\drivers\\geckodriver\\geckodriver.exe");
+		driver =new FirefoxDriver();
+		// goto nexchar website
+		NexcharHomepageObject homepageObject= new NexcharHomepageObject(driver);
+		driver.get("https://nexchar.com/");
+		homepageObject.clickdemopage();
+		homepageObject.clickSignUpButton();
+	}
+}

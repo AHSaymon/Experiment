@@ -1,0 +1,17 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Findelement {
+	public static void main(String[] args) {
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver= new FirefoxDriver();
+		driver.get("https://nexchar.com/signin");
+		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("Abc");
+		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("12345");
+		driver.findElement(By.xpath("//button[@type='submit']")).sendKeys(Keys.RETURN);
+	}
+}

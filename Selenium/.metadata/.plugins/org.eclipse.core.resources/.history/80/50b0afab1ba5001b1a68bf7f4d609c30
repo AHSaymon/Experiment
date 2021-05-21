@@ -1,0 +1,26 @@
+package test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class test1_YoutubeSearch {
+	public static void main(String[] args) {
+		youtubeSearch();
+	}
+	public static void youtubeSearch(){
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\Desktop\\Work\\New folder\\Selenium\\SeleniumFw\\drivers\\geckodriver\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		
+		// go to youtube
+		driver.get("https://youtube.com/");
+		// enter text in the search box
+		driver.findElement(By.name("search_query")).sendKeys("Wwe");
+		// click on the search box
+		// fail attempt
+		//driver.findElement(By.xpath("//button[@id='search-icon-legacy']//")).click();
+		driver.findElement(By.xpath("//button[@id='search-icon-legacy']//")).sendKeys(Keys.RETURN);
+	}
+
+}

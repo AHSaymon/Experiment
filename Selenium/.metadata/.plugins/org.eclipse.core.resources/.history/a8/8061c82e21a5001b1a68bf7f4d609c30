@@ -1,0 +1,22 @@
+package test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Test1_GoogleSearch {
+
+	public static void main(String[] args) {
+		googleSearch();
+		
+	}
+	public static void googleSearch(){
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\Desktop\\Work\\New folder\\Selenium\\SeleniumFw\\drivers\\geckodriver\\geckodriver.exe");
+		WebDriver driver =new FirefoxDriver();
+		driver.get("https://nexchar.com/");
+		//driver.findElement(By.name("q")).sendKeys("WWE");
+		driver.findElement(By.xpath("//span[contains(text(),'Sign Up')]")).sendKeys(Keys.RETURN);
+		
+	}
+}

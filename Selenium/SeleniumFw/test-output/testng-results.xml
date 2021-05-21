@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="61018" started-at="2021-04-26T18:18:12Z" finished-at="2021-04-26T18:19:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="61018" started-at="2021-04-26T18:18:12Z" finished-at="2021-04-26T18:19:13Z">
+      <class name="test.TestNgDemo">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:test.TestNgDemo@5700d6b1]" name="setUpTest" is-config="true" duration-ms="25765" started-at="2021-04-27T00:18:12Z" finished-at="2021-04-27T00:18:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="nexcharWebsite()[pri:0, instance:test.TestNgDemo@5700d6b1]" name="nexcharWebsite" duration-ms="31098" started-at="2021-04-27T00:18:38Z" finished-at="2021-04-27T00:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nexcharWebsite -->
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:test.TestNgDemo@5700d6b1]" name="tearDownTest" is-config="true" duration-ms="4057" started-at="2021-04-27T00:19:09Z" finished-at="2021-04-27T00:19:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.TestNgDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

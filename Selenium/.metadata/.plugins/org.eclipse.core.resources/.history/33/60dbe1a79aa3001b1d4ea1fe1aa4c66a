@@ -1,0 +1,11 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserTest {
+	public static void main (String[] args){
+		WebDriver driver = new ChromeDriver();
+		System.setProperty("WebDriver.gecko.driver", "C:\\Users\\User\\Desktop\\Work\\New folder\\Selenium\\SeleniumFw\\drivers\\geckodriver\\geckodriver.exe");
+		driver.get("https://selenium.dev/");
+	}
+
+}
